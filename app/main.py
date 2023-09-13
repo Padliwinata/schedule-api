@@ -3,7 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes import router
 
 
-app = FastAPI()
+app = FastAPI(
+    title="API Praktikum IFLab",
+    version="1.0.0"
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

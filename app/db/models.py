@@ -20,10 +20,15 @@ class Matkul(BaseModel):
     dosen: Dosen
 
 
-class Asprak(BaseModel):
+class AsprakJadwal(BaseModel):
     kode: str
     matkul: List[str]
     kesanggupan: List[str]
+
+
+class Asprak(AsprakJadwal):
+    nama: str
+    angkatan: str
 
 
 class Jadwal(BaseModel):
@@ -31,4 +36,4 @@ class Jadwal(BaseModel):
     sesi: Sesi
     matkul: Matkul
     kelas: str
-    asprak: Asprak
+    asprak: AsprakJadwal

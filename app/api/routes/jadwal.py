@@ -1,10 +1,10 @@
 from fastapi import APIRouter
 from fastapi.encoders import jsonable_encoder
 from db.models import Jadwal
-from db import db
+from db import db_jadwal as db
 
 
-router = APIRouter(prefix="/schedule")
+router = APIRouter()
 
 
 @router.get("/")
