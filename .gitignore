@@ -21,6 +21,7 @@ venv
 docs.zip
 archive.zip
 .spaceignore
+example.py
 
 # vim temporary files
 *~
